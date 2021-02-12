@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Launchpad</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<style>
+		#dropdownMenuButton {
+			width: 50px;
+			height: 50px;
+			margin-top: 50px;
+		}
+	</style>
+  </head>
+
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="dropdown">
+					<img class="rounded float-right dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" src="img/appcues_logo.svg" alt="">
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						 <a id="modal-197236" class="dropdown-item" href="#modal-container-197236" role="button" class="btn" data-toggle="modal">New Stuff</a>
+						 <div class="dropdown-divider"></div>
+						 <a id="modal-197236" class="dropdown-item" href="#modal-container-324605" role="button" class="btn" data-toggle="modal">Get Help</a>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modal-container-197236" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="myModalLabel">
+									What's new in Agent Tools: Monday 3/15
+								</h5> 
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true">×</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="accordion" id="accordionExample">
+									<div class="card">
+									  <div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+										  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											New Feature #1
+										  </button>
+										</h2>
+									  </div>
+									  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+										<div class="card-body">
+											<p>Here's new info about New Feature #1.</p>
+											<p>More info from <a href="#">The Bundle #???</a></p>
+										</div>
+									  </div>
+									</div>
+									<div class="card">
+									  <div class="card-header" id="headingTwo">
+										<h2 class="mb-0">
+										  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											New Feature #2
+										  </button>
+										</h2>
+									  </div>
+									  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+										<div class="card-body">
+											<div class="card-body">
+												<p>Here's new info about New Feature #2.</p>
+												<p>More info from <a href="#">The Bundle #???</a></p>
+											</div>
+										</div>
+									  </div>
+									</div>
+								  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal fade" id="modal-container-324605" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="myModalLabel">
+									Get Help
+								</h5> 
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true">×</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<ul class="nav nav-tabs nav-fill" id="pills-tab" role="tablist">
+									<li class="nav-item" role="presentation">
+									  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">On This Page</a>
+									</li>
+									<li class="nav-item" role="presentation">
+									  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Search</a>
+									</li>
+								  </ul>
+								  <div class="tab-content" id="pills-tabContent">
+									<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+										<p></p>
+										<p>Show me how to:</p>
+										<ul>
+											<li><a href="#">Do this (links to Appcues flow)</a></li>
+											<li><a href="#">Do that (links to Appcues flow)</a></li>
+											<li><a href="#">Do something else (links to Appcues flow)</a></li>
+										</ul>
+										<p><a href="#">Let me explore this page (Appcues flow with multiple beacons & tooltips</a></p>
+									</div>
+									<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+										<form>
+											<div class="form-group">
+											  <label for="exampleFormControlInput1"></label>
+											  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="How do I ...">
+											</div>
+											<button type="button" class="btn btn-primary float-right">Search!</button>
+										  </form>
+										  <div class="clearfix"></div>
+										  <p>Search terms show up here:</p>
+									</div>
+								  </div>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
